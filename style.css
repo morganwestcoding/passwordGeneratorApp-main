@@ -255,7 +255,7 @@ select {
   }
 
   .copyIcon:hover .copyIconPath {
-    fill:white
+    fill:white;
   }
 
   .options {
@@ -343,13 +343,13 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* On mouse-over, add a background color */
 .checkboxLabel:hover input ~ .checkmark {
-  border-color: hsl(var(--clr-neonGreen));
+  border-color: hsl(var(--clr-orange));
 }
 
 /* When the checkbox is checked, add a background */
 .checkboxLabel input:checked ~ .checkmark {
-  background-color: hsl(var(--clr-neonGreen));
-  border-color: hsl(var(--clr-neonGreen));
+  background-color: hsl(var(--clr-orange));
+  border-color: hsl(var(--clr-orange));
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -385,4 +385,54 @@ input[type="range"]::-webkit-slider-thumb {
   height: 28px;
   border: 2px solid hsl(var(--clr-almostWhite));
   margin-left: 0.5rem;
+}
+
+.button {
+  width: 100%;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  border: 2px solid hsl(var(--clr-orange));
+
+}
+
+.button:hover {
+  background-color: hsl(var(--clr-darkGrey));
+  color: hsl(var(--clr-orange));
+  cursor: pointer;
+}
+
+.button svg {
+  margin-left: 1rem;
+}
+
+.button:hover path {
+  fill: hsl(var(--clr-orange));
+}
+
+.alert {
+  display: none;
+  text-align: center;
+  color: hsl(var(--clr-red));
+}
+
+/*  Level Classes */
+
+.tooWeak {
+  background-color: hsl(var(--clr-red));
+  border: 2px solid hsl(var(--clr-red));
+}
+
+.weak {
+  background-color: hsl(var(--clr-orange));
+  border: 2px solid hsl(var(--clr-orange));
+}
+
+.medium {
+  background-color: hsl(var(--clr-yellow));
+  border: 2px solid hsl(var(--clr-yellow));
+}
+
+.strong {
+  background-color: hsl(var(--clr-orange));
+  border: 2px solid hsl(var(--clr-orange));
 }
